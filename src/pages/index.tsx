@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { SubscribeButton } from '../components/SubscribeButton';
 import styles from "./index.module.scss";
 
 export default function Home(): JSX.Element {
@@ -15,6 +16,7 @@ export default function Home(): JSX.Element {
             Get access to all the publications <br />
             <span>for $ 9.90 month</span>
           </p>
+          <SubscribeButton />
         </section>
         <img src="/images/avatar.svg" alt="Girl coding" />
       </main>
