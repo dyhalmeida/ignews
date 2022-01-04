@@ -1,12 +1,23 @@
 import Head from "next/head";
+import styles from "./index.module.scss";
 
 export default function Home(): JSX.Element {
   return (
     <>
       <Head>
-        <title>ig.news</title>
+        <title>Home | ig.news</title>
       </Head>
-      <h1>Hello Next JS</h1>
+      <main className={styles.container}>
+        <section className={styles.content}>
+          <span>👏 &nbsp; Hey, welcome</span>
+          <h1>News about the <span>React</span> world</h1>
+          <p>
+            Get access to all the publications <br />
+            <span>for $ 9.90 month</span>
+          </p>
+        </section>
+        <img src="/images/avatar.svg" alt="Girl coding" />
+      </main>
     </>
   );
 }
